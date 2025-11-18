@@ -8,6 +8,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(NvencRtspPlugin SHARED
     src/NvencRtspPlugin.cpp
     src/NvencRtspPlugin.h
+    src/NvencEncoder.h
+    src/NvencEncoderBase.cpp
+    src/NvencEncoderH264.h
+    src/NvencEncoderH264.cpp
+    src/NvencEncoderH265.h
+    src/NvencEncoderH265.cpp
+    src/NvencEncoderFactory.cpp
 )
 
 target_include_directories(NvencRtspPlugin PRIVATE
